@@ -1,6 +1,10 @@
 from django.shortcuts import render
-def home_page():
-    pass
+from django.http import HttpResponse
+
+
+def home_page(request):
+    return HttpResponse('<html><title>Listy rzeczy do zrobienia</title></html>')
+
 
 
 # Create your views here.
